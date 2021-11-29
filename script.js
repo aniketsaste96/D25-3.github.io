@@ -22,10 +22,10 @@ btn.addEventListener("click", () => {
 
             //appending data to HTML
             let realData = Bookdata[0]
-            document.getElementById("p1").innerHTML = ` ${realData.title}`
-            document.getElementById("p2").innerHTML = `${realData.year}`
-            document.getElementById("p3").innerHTML = `${realData.author}`
-            document.getElementById("url").innerHTML = `<a href=${realData.wiki_url}>Wikipedia</a>
+            document.querySelector(".p1").innerHTML = ` ${realData.title}`
+            document.querySelector(".p2").innerHTML = `${realData.year}`
+            document.querySelector(".p3").innerHTML = `${realData.author}`
+            document.querySelector(".url").innerHTML = `<a href=${realData.wiki_url}>Wikipedia</a>
             `
             //Error Handling
         } catch (err) {
